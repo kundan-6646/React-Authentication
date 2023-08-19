@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8FAFC;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center-card {
+    width: 35%;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* form styling starts here  */
+
+form > h2 {
+    margin-top: 5px;
+    color: #333333;
+}
+
+form .welcome-text {
+    color: gray;
+}
+
+.form-data {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-data label {
+    color: #333333;
+}
+
+.form-data input {
+    padding: 10px 5px;
+    margin: 10px 0;
+    border: none;
+    outline: 1px solid gray;
+    font-size: 16px;
+    border-radius: 4px;
+    color: #333333;
+    width: 100%;
+}
+
+.form-data input:focus {
+    outline: #524AEF;
+    box-shadow: 0 0 5px rgba(82, 74, 239, 0.7);
+}
+
+.btn {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #524AEF;
+    color: #FFFFFF;
+    margin: 10px 0;
+    border: none;
+    outline: 1px solid gray;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    outline: 1px solid #524AEF;
+    color: #524AEF;
+    background-color: #FFFFFF;
+}
+
+.forget-pass {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #524AEF;
+}
+
+.form-container > span {
+    margin-top: 20px;
+}
+
+@media(max-width: 900px) {
+    .form-container {
+        overflow-y: scroll;
+    }
+
+    .center-card {
+        width: 60%;
+    }
+}
+
+@media(max-width: 550px) {
+    .center-card {
+        width: 95%;
+    }
+}
+
+
+/* form styling ends here  */
+
+
+/* profile styling starts here  */
+
+.profile-images {
+    width: 100%;
+    position: relative;
+}
+
+.profile-images .cover-img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.profile-images .profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    background-color: #333333;
+    transform: translateX(-50%);
+    padding: 5px;
+    border: 4px solid #FFFFFF;
+}
+
+.profile-username {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.profile-email {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.profile-button {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-button > button {
+    width: 60%;
+    padding: 15px 5px;
+
+}
+
+.user-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.user-data-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-data-item .title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.user-data-item .value {
+    font-size: 14px;
+}
+
+/* form styling ends here  */
